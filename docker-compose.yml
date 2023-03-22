@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  sockets:
+    container_name: socket
+    build: 
+      context: .
+    restart: always
+    ports:
+      - "8988:8988"
